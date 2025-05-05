@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="lock-screen" id="lockScreen">
+            <div class="header">
+                <h1>Lock</h1>
+                <p class="thai-text">วันครบรอบของเรา?</p>
+                <p class="thai-text">เช่น 01/01/2025 วัน เดือน ค.ศ</p>
+            </div> 
+            <div class="passcode-container">
+                <div class="passcode-display">
+                    <input type="password" id="passcodeInput" readonly maxlength="8">
+                </div>
+                
+                <div class="passcode-pad">
+                    <button class="digit" data-digit="1">1</button>
+                    <button class="digit" data-digit="2">2</button>
+                    <button class="digit" data-digit="3">3</button>
+                    <button class="digit" data-digit="4">4</button>
+                    <button class="digit" data-digit="5">5</button>
+                    <button class="digit" data-digit="6">6</button>
+                    <button class="digit" data-digit="7">7</button>
+                    <button class="digit" data-digit="8">8</button>
+                    <button class="digit" data-digit="9">9</button>
+                    <button class="digit" data-digit="0">0</button>
+                    <button id="deleteButton" class="delete-button">⌫</button>
+                    <button id="confirmButton" class="confirm-button">ตกลง</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="unlocked-screen" id="unlockedScreen">
+            <div class="photo-slideshow" id="photoSlideshow">
+                <img src="8.jpg" alt="Photo 1" class="photo active">
+                <img src="4.jpg" alt="Photo 2" class="photo">
+                <img src="3.jpg" alt="Photo 3" class="photo">
+                <img src="5.png" alt="Photo 4" class="photo">
+                <img src="2.jpg" alt="Photo 5" class="photo">
+                <img src="6.jpg" alt="Photo 6" class="photo">
+                <img src="1.jpg" alt="Photo 7" class="photo">
+                <img src="7.jpg" alt="Photo 8" class="photo">
+                <div class="swipe-instructions">
+                    <span class="swipe-left">←</span>
+                    <span class="swipe-right">→</span>
+                </div>
+            </div>
+            <button id="nextButton" class="heart-button">❤️</button>
+            <div class="message" id="message" style="display: none;">
+                <h2>Love you <3</h2>
+                <p>
+                    สุขสันต์วันครบรอบ 4 เดือนนะครับ ^^<br>
+                    ขอบคุณที่อยู่ด้วยกันมา นานขนาดนี้นะ<br>
+                    ขอบคุณสำหรับทุกๆอย่างนะ<br>
+                    ขอบคุณที่อยู่ข้างกันมาตลอด<br>
+                    อยากให้อยู่ด้วยเเบบนี้ไปตลอดนะครับ<br>
+                    รักที่สุดเลยย ❤️
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
